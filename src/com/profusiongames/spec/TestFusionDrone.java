@@ -14,25 +14,25 @@ public class TestFusionDrone extends AndroidTestCase
 	
 	public void testGetUIComponents() throws Throwable
 	{
-		Assert.assertEquals(0,0);
+		Assert.assertEquals(1,0);
 	}
 	
 	
 	public void testNavDataReceived() throws Throwable
 	{
-		Assert.assertEquals(0,0);
+		Assert.assertEquals(1,0);
 	}
 	
 	
 	public void testFrameReceived() throws Throwable
 	{
-		Assert.assertEquals(0,0);
+		Assert.assertEquals(1,0);
 	}
 	
 	
 	public void testOnSensorChanged() throws Throwable
 	{
-		Assert.assertEquals(0,0);
+		Assert.assertEquals(1,0);
 	}
 	
 	
@@ -45,11 +45,11 @@ public class TestFusionDrone extends AndroidTestCase
 	
 	public void testDoInBackground2() throws Throwable
 	{
-		Assert.assertEquals(0,0);
+		Assert.assertEquals(1,0);
 	}
 	public void testOnPostExecute2() throws Throwable
 	{
-		Assert.assertEquals(0,0);
+		Assert.assertEquals(1,0);
 	}
 	
 	
@@ -63,11 +63,11 @@ public class TestFusionDrone extends AndroidTestCase
 	
 	public void testDoInBackground3() throws Throwable
 	{
-		Assert.assertEquals(0,0);
+		Assert.assertEquals(1,0);
 	}
 	public void testOnPostExecute3() throws Throwable
 	{
-		Assert.assertEquals(0,0);
+		Assert.assertEquals(1,0);
 	}
 	
 	
@@ -87,10 +87,10 @@ public class TestFusionDrone extends AndroidTestCase
 	
 	public void testDoInBackground4() throws Throwable
 	{
-		Assert.assertEquals(0,0);
+		Assert.assertEquals(1,0);
 	}
 	public void testOnPostExecute4() throws Throwable
 	{
-		Assert.assertEquals(0,0);
+		Assert.assertEquals(1,0);
 	}
 }

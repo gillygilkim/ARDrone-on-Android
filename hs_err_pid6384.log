@@ -1,0 +1,105 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:3521), pid=6384, tid=2520
+#  Error: ShouldNotReachHere()
+#
+# JRE version: 7.0-b133
+# Java VM: Java HotSpot(TM) Client VM (21.0-b03 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x003c7c00):  JavaThread "Unknown thread" [_thread_in_vm, id=2520, stack(0x00900000,0x00950000)]
+
+Stack: [0x00900000,0x00950000],  sp=0x0094f6a8,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x154341]
+V  [jvm.dll+0x14ee7b]
+V  [jvm.dll+0x181e7]
+V  [jvm.dll+0x19a48]
+V  [jvm.dll+0x28fdf]
+V  [jvm.dll+0x2a2dd]
+V  [jvm.dll+0x2a8db]
+V  [jvm.dll+0x2aaba]
+V  [jvm.dll+0x2abfa]
+V  [jvm.dll+0x2aec7]
+V  [jvm.dll+0x71761]
+V  [jvm.dll+0x71b1b]
+V  [jvm.dll+0x114cac]
+V  [jvm.dll+0x135e1a]
+V  [jvm.dll+0x9d470]
+C  [javaw.exe+0x1359]
+C  [javaw.exe+0x1e82]
+C  [javaw.exe+0xa18b]
+C  [javaw.exe+0xa215]
+C  [kernel32.dll+0xb729]  GetModuleFileNameA+0x1ba
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x003c7c00 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=2520, stack(0x00900000,0x00950000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x00400000 - 0x00430000 	C:\Program Files\Java\jre7\bin\javaw.exe
+0x7c900000 - 0x7c9b2000 	C:\WINDOWS\system32\ntdll.dll
+0x7c800000 - 0x7c8f6000 	C:\WINDOWS\system32\kernel32.dll
+0x77dd0000 - 0x77e6b000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x77e70000 - 0x77f03000 	C:\WINDOWS\system32\RPCRT4.dll
+0x77fe0000 - 0x77ff1000 	C:\WINDOWS\system32\Secur32.dll
+0x7e410000 - 0x7e4a1000 	C:\WINDOWS\system32\USER32.dll
+0x77f10000 - 0x77f59000 	C:\WINDOWS\system32\GDI32.dll
+0x773d0000 - 0x774d3000 	C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.6028_x-ww_61e65202\COMCTL32.dll
+0x77c10000 - 0x77c68000 	C:\WINDOWS\system32\msvcrt.dll
+0x77f60000 - 0x77fd6000 	C:\WINDOWS\system32\SHLWAPI.dll
+0x78aa0000 - 0x78b5e000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x6d930000 - 0x6dc3b000 	C:\Program Files\Java\jre7\bin\client\jvm.dll
+0x71ad0000 - 0x71ad9000 	C:\WINDOWS\system32\WSOCK32.dll
+0x71ab0000 - 0x71ac7000 	C:\WINDOWS\system32\WS2_32.dll
+0x71aa0000 - 0x71aa8000 	C:\WINDOWS\system32\WS2HELP.dll
+0x76b40000 - 0x76b6d000 	C:\WINDOWS\system32\WINMM.dll
+0x6d8c0000 - 0x6d8cc000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x6d360000 - 0x6d380000 	C:\Program Files\Java\jre7\bin\java.dll
+0x76bf0000 - 0x76bfb000 	C:\WINDOWS\system32\PSAPI.DLL
+0x6d910000 - 0x6d923000 	C:\Program Files\Java\jre7\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 -Xbootclasspath/p:C:\Program Files\Android\android-sdk\platforms\android-10\android.jar 
+java_command: org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 1993 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -classNames com.profusiongames.spec.FusionDrone_Spec
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.7.0
+CLASSPATH=.;C:\Program Files\Java\jre6\lib\ext\QTJava.zip
+PATH=C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Gemplus\GemSafe Libraries\BIN;C:\Program Files\Windows Imaging\;C:\Program Files\QuickTime\QTSystem\;C:\Program Files\Riverbed\Steelhead Mobile\;C:\Program Files\TortoiseGit\bin;C:\Program Files\Apache Software Foundation\apache-maven-2.2.1\bin;C:\Program Files\Java\jdk1.7.0\bin;C:\Documents and Settings\Administrator\Desktop\eclipse;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 15 Stepping 6, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows XP Build 2600 Service Pack 3
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 15 stepping 6, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3
+
+Memory: 4k page, physical 3135016k(1398496k free), swap 5065896k(2422268k free)
+
+vm_info: Java HotSpot(TM) Client VM (21.0-b03) for windows-x86 JRE (1.7.0-ea-b133), built on Mar 10 2011 02:31:56 by "java_re" with unknown MS VC++:1600
+
+time: Tue Jul 19 10:06:10 2011
+elapsed time: 0 seconds
+

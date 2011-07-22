@@ -4,9 +4,9 @@
 	<classpathentry kind="src" path="gen"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre7"/>
-	<classpathentry kind="lib" path="C:/Documents and Settings/Administrator/Desktop/lib/hidapi.jar"/>
-	<classpathentry kind="lib" path="C:/Documents and Settings/Administrator/Desktop/lib/SteelSeries/trident-6.2.jar"/>
-	<classpathentry kind="lib" path="C:/Documents and Settings/Administrator/Desktop/lib/SteelSeries/SteelSeries-3.9.2.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Administrator/Desktop/ARDrone_JavaDrone/hidapi.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Administrator/Desktop/ARDrone_JavaDrone/SteelSeries/trident-6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Administrator/Desktop/ARDrone_JavaDrone/SteelSeries/SteelSeries-3.9.2.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

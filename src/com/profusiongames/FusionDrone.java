@@ -26,28 +26,28 @@ import com.codeminders.ardrone.NavDataListener;
 
 public class FusionDrone extends Activity implements NavDataListener, DroneVideoListener, SensorEventListener {
 
-	private static FusionDrone fDrone;
-	private static ARDrone drone;
-	private static SensorManager sensorManager;
+	public static FusionDrone fDrone;
+	public static ARDrone drone;
+	public static SensorManager sensorManager;
 
-	private static boolean isConnected = false;
-	private static boolean isFlying = false;
-	private int batteryLife = 0;
+	public static boolean isConnected = false;
+	public static boolean isFlying = false;
+	public int batteryLife = 0;
 	public static int queueToShow = 0;
 	
-	private double startX = -1f;
-	private double startY = -1f;
-	private double startZ = -1f;
+	public double startX = -1f;
+	public double startY = -1f;
+	public double startZ = -1f;
 
 	/* Components */
 	@SuppressWarnings("unused")
-	private TextView statusBar;
-	private Button connectionStartButton;
-	private ProgressBar connectionWhirlProgress;
-	private Button launchButton;
-	private TextView batteryText;
-	private ImageView videoDisplay;
-	private Button animateButton;
+	public TextView statusBar;
+	public Button connectionStartButton;
+	public ProgressBar connectionWhirlProgress;
+	public Button launchButton;
+	public TextView batteryText;
+	public ImageView videoDisplay;
+	public Button animateButton;
 	/* Components */
 
 	@Override
@@ -102,7 +102,7 @@ public class FusionDrone extends Activity implements NavDataListener, DroneVideo
     }
 	
 	
-	private void getUIComponents() {
+	public void getUIComponents() {
 		statusBar = (TextView) findViewById(R.id.statusBar);
 
 		connectionStartButton = (Button) findViewById(R.id.connectButton);
@@ -203,7 +203,7 @@ public class FusionDrone extends Activity implements NavDataListener, DroneVideo
 		
 	}
 
-	private float sensorThreshold = 3;
+	public float sensorThreshold = 3;
 	@Override
 	public void onSensorChanged(SensorEvent e) {
 		if(Math.random() < 1) return;
@@ -232,8 +232,8 @@ public class FusionDrone extends Activity implements NavDataListener, DroneVideo
     
     
     
-	private class DroneStarter extends AsyncTask<ARDrone, Integer, Boolean> {
-		private static final int CONNECTION_TIMEOUT = 3000;
+	public class DroneStarter extends AsyncTask<ARDrone, Integer, Boolean> {
+		public static final int CONNECTION_TIMEOUT = 3000;
 
 		@Override
 		protected Boolean doInBackground(ARDrone... drones) {
@@ -293,7 +293,7 @@ public class FusionDrone extends Activity implements NavDataListener, DroneVideo
 	
 	
 
-	private class DroneEnder extends AsyncTask<ARDrone, Integer, Boolean> {
+	public class DroneEnder extends AsyncTask<ARDrone, Integer, Boolean> {
 		@Override
 		protected Boolean doInBackground(ARDrone... drones) {
 			ARDrone drone = drones[0];
@@ -347,7 +347,7 @@ public class FusionDrone extends Activity implements NavDataListener, DroneVideo
 	
 	
 	
-	private class VideoDisplayer extends AsyncTask<Void, Integer, Void> {
+	public class VideoDisplayer extends AsyncTask<Void, Integer, Void> {
 		
 		public Bitmap b;
 		public int[]rgbArray;

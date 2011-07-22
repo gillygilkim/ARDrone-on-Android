@@ -31,10 +31,10 @@ package com.codeminders.ardrone.video;
 // may be used to endorse or promote products derived from this software without
 // specific prior written permission.
 
-class ImageSlice {
+public class ImageSlice {
 	MacroBlock[] MacroBlocks;
 
-	ImageSlice(int macroBlockCount) {
+	public ImageSlice(int macroBlockCount) {
 		MacroBlocks = new MacroBlock[macroBlockCount];
 
 		for (int index = 0; index < macroBlockCount; index++)
